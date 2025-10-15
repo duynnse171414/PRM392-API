@@ -1,0 +1,523 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.data\\entities\\membershippackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|solutionrelative:myapp.data\\entities\\membershippackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\services\\membershippackageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\membershippackageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\response\\membershippackageresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\response\\membershippackageresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.data\\entities\\model3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|solutionrelative:myapp.data\\entities\\model3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|solutionrelative:myapp.data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.api\\controllers\\membershippackagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\membershippackagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\services\\imembershippackageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\imembershippackageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\services\\model3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\model3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\request\\membershippackageupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\request\\membershippackageupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\request\\membershippackagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\request\\membershippackagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.api\\controllers\\model3dcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\model3dcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\services\\imodel3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\imodel3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|solutionrelative:myapp.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\request\\model3drequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\request\\model3drequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\response\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\response\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\response\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\response\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\response\\model3dresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\response\\model3dresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\response\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\response\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\dtos\\request\\model3dupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\request\\model3dupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.data\\migrations\\20251014083350_addupdatedatetomodel3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CB4BEA-379D-4415-A35E-8645A0178A02}|MyApp.Data\\MyApp.Data.csproj|solutionrelative:myapp.data\\migrations\\20251014083350_addupdatedatetomodel3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.business\\myapp.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\myapp.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\pc\\desktop\\prm392-project\\my3layerapp\\myapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MembershipPackageService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\MembershipPackageService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\MembershipPackageService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\MembershipPackageService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\MembershipPackageService.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAUwLUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:53:32.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MyApp.Data\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Entities\\User.cs",
+              "RelativeToolTip": "MyApp.Data\\Entities\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T05:49:34.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\UserService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\UserService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wE4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:03:28.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\IUserService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAtwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:03:33.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\JwtService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\JwtService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwBEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:19:54.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MyApp.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:21:20.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\LoginRequest.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\request\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:37:46.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model3D.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Entities\\Model3D.cs",
+              "RelativeDocumentMoniker": "MyApp.Data\\Entities\\Model3D.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Entities\\Model3D.cs",
+              "RelativeToolTip": "MyApp.Data\\Entities\\Model3D.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAD4vw8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T07:27:21.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MembershipPackage.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Entities\\MembershipPackage.cs",
+              "RelativeDocumentMoniker": "MyApp.Data\\Entities\\MembershipPackage.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Entities\\MembershipPackage.cs",
+              "RelativeToolTip": "MyApp.Data\\Entities\\MembershipPackage.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:50:07.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MembershipPackageResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\MembershipPackageResponse.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\response\\MembershipPackageResponse.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\MembershipPackageResponse.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\response\\MembershipPackageResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:55:31.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\RegisterRequest.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\request\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:37:59.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MembershipPackageUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\MembershipPackageUpdateRequest.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\MembershipPackageUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\MembershipPackageUpdateRequest.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\request\\MembershipPackageUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:52:50.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IMembershipPackageService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\IMembershipPackageService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\IMembershipPackageService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\IMembershipPackageService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\IMembershipPackageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:53:07.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MembershipPackageController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\MembershipPackageController.cs",
+              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\MembershipPackageController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\MembershipPackageController.cs",
+              "RelativeToolTip": "MyApp.Api\\Controllers\\MembershipPackageController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:54:28.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MembershipPackageRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\MembershipPackageRequest.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\MembershipPackageRequest.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\MembershipPackageRequest.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\request\\MembershipPackageRequest.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:52:20.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Model3DRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:30:29.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Model3DService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\Model3DService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\Model3DService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\Model3DService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\Model3DService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwKgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T07:30:53.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20251014083350_AddUpdateDateToModel3D.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Migrations\\20251014083350_AddUpdateDateToModel3D.cs",
+              "RelativeDocumentMoniker": "MyApp.Data\\Migrations\\20251014083350_AddUpdateDateToModel3D.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\Migrations\\20251014083350_AddUpdateDateToModel3D.cs",
+              "RelativeToolTip": "MyApp.Data\\Migrations\\20251014083350_AddUpdateDateToModel3D.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:34:32.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Model3DController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\Model3DController.cs",
+              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\Model3DController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\Model3DController.cs",
+              "RelativeToolTip": "MyApp.Api\\Controllers\\Model3DController.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAiwNEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T07:29:43.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MyApp.Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAIwF0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:24:52.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MyApp.Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Data\\AppDbContext.cs",
+              "RelativeToolTip": "MyApp.Data\\AppDbContext.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T08:04:54.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Program.cs",
+              "RelativeDocumentMoniker": "MyApp.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Program.cs",
+              "RelativeToolTip": "MyApp.Api\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:21:56.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IModel3DService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\IModel3DService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\IModel3DService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\Services\\IModel3DService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\IModel3DService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T07:31:44.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\response\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\LoginResponse.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\response\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:38:33.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RegisterResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\RegisterResponse.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\response\\RegisterResponse.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\RegisterResponse.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\response\\RegisterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:38:41.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserInfo.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\UserInfo.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\response\\UserInfo.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\UserInfo.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\response\\UserInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:38:47.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Model3DUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\Model3DUpdateRequest.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\Model3DUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\request\\Model3DUpdateRequest.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\request\\Model3DUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:08:56.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Model3DResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\Model3DResponse.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\response\\Model3DResponse.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\DTOs\\response\\Model3DResponse.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\response\\Model3DResponse.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:08:42.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MyApp.Business.csproj",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\MyApp.Business.csproj",
+              "RelativeDocumentMoniker": "MyApp.Business\\MyApp.Business.csproj",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Business\\MyApp.Business.csproj",
+              "RelativeToolTip": "MyApp.Business\\MyApp.Business.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-14T08:05:42.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "MyApp.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\appsettings.json",
+              "RelativeToolTip": "MyApp.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-13T07:12:28.487Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

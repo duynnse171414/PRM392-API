@@ -1,0 +1,29 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace MyApp.Data.Migrations
+{
+    /// <inheritdoc />
+    public partial class AddIsDeletedToMembershipPackage : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddColumn<bool>(
+                name: "IsDeleted",
+                table: "MembershipPackages",
+                type: "tinyint(1)",
+                nullable: false,
+                defaultValue: false);
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropColumn(
+                name: "IsDeleted",
+                table: "MembershipPackages");
+        }
+    }
+}
