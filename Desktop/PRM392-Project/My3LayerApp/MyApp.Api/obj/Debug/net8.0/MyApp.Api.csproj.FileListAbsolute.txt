@@ -117,4 +117,5 @@ C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Api\bin\Debug\net8.0\System
 C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Api\obj\Debug\net8.0\MyApp.Api.sourcelink.json
 C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

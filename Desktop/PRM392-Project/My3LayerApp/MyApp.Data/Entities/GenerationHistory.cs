@@ -14,6 +14,10 @@ namespace MyApp.Data.Entities
         public int ModelId { get; set; } // FK
         public Model3D Model3D { get; set; } = null!;
         public DateTime GenerationDate { get; set; }
+        public bool IsDeleted { get; set; } = false;
+
+        public DateTime? DeletedDate { get; set; }
+
         public string? InputImages { get; set; } // maybe JSON or CSV list of image paths
     }
 }

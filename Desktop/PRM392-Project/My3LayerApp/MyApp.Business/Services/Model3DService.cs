@@ -14,16 +14,24 @@ namespace MyApp.Business.Services
     public class Model3DService : IModel3DService
     {
         private readonly AppDbContext _context;
+        private static readonly TimeZoneInfo VietnamTimeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time");
 
         public Model3DService(AppDbContext context)
         {
             _context = context;
         }
 
+        // Helper method để lấy giờ Việt Nam
+        private DateTime GetVietnamTime()
+        {
+            return TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, VietnamTimeZone);
+        }
+
         public async Task<IEnumerable<Model3DResponse>> GetAllAsync()
         {
             var models = await _context.Models
                 .Include(m => m.User)
+                .Include(m => m.GenerationHistories) // Include GenerationHistories để đếm
                 .Where(m => m.IsDeleted == false) // Chỉ lấy những model chưa bị xóa
                 .ToListAsync();
 
@@ -34,6 +42,7 @@ namespace MyApp.Business.Services
         {
             var model = await _context.Models
                 .Include(m => m.User)
+                .Include(m => m.GenerationHistories) // Include GenerationHistories để đếm
                 .Where(m => m.IsDeleted == false) // Chỉ lấy model chưa bị xóa
                 .FirstOrDefaultAsync(m => m.ModelId == id);
 
@@ -44,6 +53,7 @@ namespace MyApp.Business.Services
         {
             var models = await _context.Models
                 .Include(m => m.User)
+                .Include(m => m.GenerationHistories) // Include GenerationHistories để đếm
                 .Where(m => m.UserId == userId && m.IsDeleted == false)
                 .ToListAsync();
 
@@ -58,13 +68,26 @@ namespace MyApp.Business.Services
                 throw new ArgumentException("FilePath is required");
             }
 
+            // Validate UserId
+            if (request.UserId <= 0)
+            {
+                throw new ArgumentException("UserId is required and must be greater than 0");
+            }
+
+            // Kiểm tra User có tồn tại không
+            var userExists = await _context.Users.AnyAsync(u => u.UserId == request.UserId);
+            if (!userExists)
+            {
+                throw new ArgumentException($"User with ID {request.UserId} does not exist");
+            }
+
             // Map từ Request DTO sang Entity
             var entity = new Model3D
             {
                 FilePath = request.FilePath,
                 Status = request.Status ?? "Pending",
-                
-                CreationDate = DateTime.UtcNow,
+                UserId = request.UserId,
+                CreationDate = GetVietnamTime(),
                 IsDeleted = false
             };
 
@@ -100,7 +123,7 @@ namespace MyApp.Business.Services
                 existingModel.Status = request.Status;
             }
 
-            existingModel.UpdatedDate = DateTime.UtcNow;
+            existingModel.UpdatedDate = GetVietnamTime();
 
             await _context.SaveChangesAsync();
 
@@ -121,7 +144,7 @@ namespace MyApp.Business.Services
 
             // Đánh dấu là đã xóa thay vì xóa thật
             model.IsDeleted = true;
-            model.DeletedDate = DateTime.UtcNow;
+            model.DeletedDate = GetVietnamTime();
 
             await _context.SaveChangesAsync();
 
@@ -174,7 +197,8 @@ namespace MyApp.Business.Services
                 Status = entity.Status,
                 UserId = entity.UserId,
                 UserName = entity.User?.Username
-               
+                
+
             };
         }
     }

@@ -13,3 +13,4 @@ C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Business\obj\Debug\net8.0\M
 C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Business\obj\Debug\net8.0\refint\MyApp.Business.dll
 C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Business\obj\Debug\net8.0\MyApp.Business.pdb
 C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Business\obj\Debug\net8.0\ref\MyApp.Business.dll
+C:\Users\PC\Desktop\PRM392-Project\My3LayerApp\MyApp.Business\obj\Debug\net8.0\MyApp.Business.sourcelink.json

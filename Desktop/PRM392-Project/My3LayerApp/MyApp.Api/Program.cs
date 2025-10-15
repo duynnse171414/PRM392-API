@@ -24,6 +24,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IModel3DService, Model3DService>();
 builder.Services.AddScoped<IMembershipPackageService, MembershipPackageService>();
+builder.Services.AddScoped<IGenerationHistoryService, GenerationHistoryService>();
 
 
 builder.Services.AddControllers()
