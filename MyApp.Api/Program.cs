@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -33,15 +33,12 @@ builder.Services.AddScoped<IModel3DService, Model3DService>();
 builder.Services.AddScoped<IMembershipPackageService, MembershipPackageService>();
 builder.Services.AddScoped<IGenerationHistoryService, GenerationHistoryService>();
 
-
 builder.Services.AddControllers()
     .AddJsonOptions(x =>
     {
         x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
         x.JsonSerializerOptions.WriteIndented = true;
     });
-
-
 
 // ✅ Cấu hình Swagger với JWT
 builder.Services.AddSwaggerGen(options =>
@@ -55,7 +52,6 @@ builder.Services.AddSwaggerGen(options =>
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
         Description = "Nhập JWT token theo format: Bearer {token}"
     });
-
     options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
         {
@@ -71,6 +67,7 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
+
 // ✅ Cấu hình JWT Authentication
 var jwtKey = builder.Configuration["Jwt:Key"];
 var jwtIssuer = builder.Configuration["Jwt:Issuer"];
@@ -99,6 +96,31 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
+// ✅✅✅ TỰ ĐỘNG TẠO DATABASE KHI DEPLOY (THÊM ĐOẠN NÀY)
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<AppDbContext>();
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        
+        logger.LogInformation("Đang kiểm tra và tạo database...");
+        
+        // Tự động tạo database và tables nếu chưa có
+        context.Database.EnsureCreated();
+        
+        logger.LogInformation("Database đã sẵn sàng!");
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "❌ Lỗi khi tạo database: {Message}", ex.Message);
+        
+        // Không throw exception để app vẫn chạy, có thể kiểm tra logs
+    }
+}
 
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
