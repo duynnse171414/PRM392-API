@@ -16,8 +16,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# Render/Railway sẽ truyền PORT qua môi trường
-ENV ASPNETCORE_URLS=http://+:8080
-EXPOSE 8080
+# Render sẽ truyền PORT động; không cố định cổng tại đây
+# (Program.cs đã đọc PORT và bind)
 
 ENTRYPOINT ["dotnet", "MyApp.Api.dll"]
