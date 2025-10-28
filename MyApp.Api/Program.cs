@@ -7,6 +7,13 @@ using MyApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Bind theo biến môi trường PORT nếu Render cung cấp
+var renderPort = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrWhiteSpace(renderPort))
+{
+    builder.WebHost.UseUrls($"http://0.0.0.0:{renderPort}");
+}
+
 // Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
