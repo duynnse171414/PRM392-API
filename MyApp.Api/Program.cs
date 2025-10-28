@@ -107,6 +107,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+if (Environment.GetEnvironmentVariable("ENABLE_SWAGGER") == "true")
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseHttpsRedirection();
 
 // ✅ QUAN TRỌNG: Thứ tự phải đúng
