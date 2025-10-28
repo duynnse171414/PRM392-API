@@ -1,11 +1,11 @@
-﻿# Bước 1: Dùng image SDK để build app
+# Bước 1: Dùng image SDK để build app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy toàn bộ solution
 COPY . .
 
-# Restore các dependency
+# Restore các dependency (đường dẫn theo đúng vị trí .csproj)
 RUN dotnet restore "MyApp.Api/MyApp.Api.csproj"
 
 # Build và publish
@@ -16,7 +16,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# Render/Railway sẽ tự truyền PORT qua biến môi trường
+# Render/Railway sẽ truyền PORT qua môi trường
 ENV ASPNETCORE_URLS=http://+:8080
 EXPOSE 8080
 
