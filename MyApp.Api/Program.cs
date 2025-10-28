@@ -96,7 +96,7 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// ✅✅✅ TỰ ĐỘNG TẠO DATABASE KHI DEPLOY (THÊM ĐOẠN NÀY)
+// ✅✅✅ TỰ ĐỘNG MIGRATION DATABASE KHI DEPLOY
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -105,22 +105,22 @@ using (var scope = app.Services.CreateScope())
         var context = services.GetRequiredService<AppDbContext>();
         var logger = services.GetRequiredService<ILogger<Program>>();
         
-        logger.LogInformation("Đang kiểm tra và tạo database...");
+        logger.LogInformation("🔄 Đang kiểm tra và migration database...");
         
-        // Tự động tạo database và tables nếu chưa có
-        context.Database.EnsureCreated();
+        // ✅ SỬ DỤNG MIGRATE() thay vì EnsureCreated()
+        context.Database.Migrate();
         
-        logger.LogInformation("Database đã sẵn sàng!");
+        logger.LogInformation("✅ Database migration hoàn tất!");
     }
     catch (Exception ex)
     {
         var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "❌ Lỗi khi tạo database: {Message}", ex.Message);
+        logger.LogError(ex, "❌ Lỗi khi migration database: {Message}", ex.Message);
         
-        // Không throw exception để app vẫn chạy, có thể kiểm tra logs
+        // Có thể throw lại nếu muốn app dừng khi migration fail
+        // throw;
     }
 }
-
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
