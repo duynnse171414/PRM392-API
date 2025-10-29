@@ -1390,21 +1390,14 @@
       },
       "Model3DRequest": {
         "required": [
-          "filePath",
+          "image",
           "userId"
         ],
         "type": "object",
         "properties": {
-          "filePath": {
-            "maxLength": 500,
-            "minLength": 0,
+          "image": {
+            "minLength": 1,
             "type": "string"
-          },
-          "status": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
           },
           "userId": {
             "maximum": 2147483647,

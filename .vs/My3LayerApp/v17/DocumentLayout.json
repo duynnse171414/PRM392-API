@@ -1,26 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\",
+  "WorkspaceRootPath": "D:\\DIHOC\\PRM392-API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\dell\\documents\\prm392\\prm392-api\\desktop\\prm392-project\\my3layerapp\\myapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|d:\\dihoc\\prm392-api\\myapp.business\\services\\model3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\model3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|d:\\dihoc\\prm392-api\\myapp.business\\services\\backblazestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\backblazestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|d:\\dihoc\\prm392-api\\myapp.business\\dtos\\request\\model3drequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\dtos\\request\\model3drequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\dell\\documents\\prm392\\prm392-api\\desktop\\prm392-project\\my3layerapp\\myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\dell\\documents\\prm392\\prm392-api\\desktop\\prm392-project\\my3layerapp\\myapp.api\\myapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\myapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|c:\\users\\dell\\documents\\prm392\\prm392-api\\desktop\\prm392-project\\my3layerapp\\myapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MyApp.Api\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\myapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\myapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +41,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
               "$type": "Bookmark",
@@ -46,69 +53,140 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "MyApp.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "BackblazeStorageService.cs",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\BackblazeStorageService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\BackblazeStorageService.cs",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\BackblazeStorageService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\BackblazeStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:46:10.573Z"
+              "WhenOpened": "2025-10-29T06:55:28.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model3DService.cs",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\Model3DService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\Model3DService.cs",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\Model3DService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\Model3DService.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAwwMEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:50:22.654Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MyApp.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\MyApp.Api.csproj",
-              "RelativeDocumentMoniker": "MyApp.Api\\MyApp.Api.csproj",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\MyApp.Api.csproj",
-              "RelativeToolTip": "MyApp.Api\\MyApp.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-28T11:43:39.192Z"
+              "Title": "Model3DRequest.cs",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "RelativeToolTip": "MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:50:10.904Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MyApp.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:46:10.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyApp.Api.csproj",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\MyApp.Api.csproj",
+              "RelativeDocumentMoniker": "MyApp.Api\\MyApp.Api.csproj",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\MyApp.Api.csproj",
+              "RelativeToolTip": "MyApp.Api\\MyApp.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-28T11:43:39.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Dockerfile.txt",
               "DocumentMoniker": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Dockerfile.txt",
-              "RelativeDocumentMoniker": "MyApp.Api\\Dockerfile.txt",
               "ToolTip": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Dockerfile.txt",
-              "RelativeToolTip": "MyApp.Api\\Dockerfile.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-10-28T11:44:39.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Program.cs",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Program.cs",
               "RelativeDocumentMoniker": "MyApp.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\Program.cs",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Program.cs",
               "RelativeToolTip": "MyApp.Api\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwA8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:37:11.026Z"
+              "WhenOpened": "2025-10-28T11:37:11.026Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\appsettings.json",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\appsettings.json",
               "RelativeDocumentMoniker": "MyApp.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\Desktop\\PRM392-Project\\My3LayerApp\\MyApp.Api\\appsettings.json",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\appsettings.json",
               "RelativeToolTip": "MyApp.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-28T11:34:31.964Z",
               "EditorCaption": ""
