@@ -25,12 +25,17 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection"),
         new MySqlServerVersion(new Version(8, 0, 21))
     ));
+
+
+builder.Services.AddHttpClient();
+
 // ✅ Đăng ký Services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IModel3DService, Model3DService>();
 builder.Services.AddScoped<IMembershipPackageService, MembershipPackageService>();
 builder.Services.AddScoped<IGenerationHistoryService, GenerationHistoryService>();
+builder.Services.AddScoped<IBackblazeStorageService, BackblazeStorageService>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(x =>
