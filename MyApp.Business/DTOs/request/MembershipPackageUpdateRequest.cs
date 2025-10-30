@@ -20,5 +20,8 @@ namespace MyApp.Business.DTOs.request
 
         [Range(1, 3650, ErrorMessage = "Duration must be between 1 and 3650 days")]
         public int? DurationDays { get; set; }
+
+        [Range(-1, int.MaxValue, ErrorMessage = "Model generation limit must be -1 (unlimited) or greater than 0")]
+        public int? ModelGenerationLimit { get; set; }
     }
 }

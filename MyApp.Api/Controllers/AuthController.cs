@@ -14,11 +14,16 @@ namespace MyApp.API.Controllers
     {
         private readonly IUserService _userService;
         private readonly IJwtService _jwtService;
+        private readonly IMembershipPackageService _membershipPackageService; // ✅ Thêm service
 
-        public AuthController(IUserService userService, IJwtService jwtService)
+        public AuthController(
+            IUserService userService,
+            IJwtService jwtService,
+            IMembershipPackageService membershipPackageService) // ✅ Inject service
         {
             _userService = userService;
             _jwtService = jwtService;
+            _membershipPackageService = membershipPackageService;
         }
 
         // POST: api/auth/register
@@ -55,10 +60,21 @@ namespace MyApp.API.Controllers
 
             var createdUser = await _userService.CreateAsync(user, request.Password);
 
+            // ✅ TỰ ĐỘNG ASSIGN FREE TRIAL PACKAGE (PackageId = 1)
+            try
+            {
+                await _membershipPackageService.PurchasePackageAsync(createdUser.UserId, 1);
+            }
+            catch (Exception ex)
+            {
+                // Log error nhưng vẫn cho register thành công
+                Console.WriteLine($"Warning: Could not assign free trial package: {ex.Message}");
+            }
+
             return Ok(new RegisterResponse
             {
                 Success = true,
-                Message = "Register Successful",
+                Message = "Register Successful. Free trial package activated!",
                 User = new UserInfo
                 {
                     UserId = createdUser.UserId,
@@ -75,7 +91,6 @@ namespace MyApp.API.Controllers
         {
             // Xác thực user
             var user = await _userService.AuthenticateAsync(request.Username, request.Password);
-
             if (user == null)
             {
                 return Unauthorized(new LoginResponse

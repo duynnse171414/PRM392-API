@@ -33,6 +33,13 @@ namespace MyApp.Business.Services
         public async Task<User> CreateAsync(User user, string passwordPlain)
         {
             user.Password = Hash(passwordPlain);
+
+            // ✅ THÊM: Set CreatedAt explicitly
+            if (user.CreatedAt == default)
+            {
+                user.CreatedAt = DateTime.UtcNow;
+            }
+
             _db.Users.Add(user);
             await _db.SaveChangesAsync();
             return user;

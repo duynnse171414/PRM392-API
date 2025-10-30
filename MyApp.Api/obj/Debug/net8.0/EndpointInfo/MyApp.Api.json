@@ -641,6 +641,272 @@
         }
       }
     },
+    "/api/MembershipPackage/purchase": {
+      "post": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PurchaseMembershipRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PurchaseMembershipRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PurchaseMembershipRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MembershipPackage/my-subscription": {
+      "get": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MembershipPackage/my-subscription/history": {
+      "get": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MembershipPackage/subscription/{subscriptionId}/cancel": {
+      "post": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/MembershipPackage/subscriptions/all": {
+      "get": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MembershipPackage/subscriptions/user/{userId}": {
+      "get": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MembershipPackage/generation-stats": {
+      "get": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserGenerationStatsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserGenerationStatsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserGenerationStatsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MembershipPackage/can-generate": {
+      "get": {
+        "tags": [
+          "MembershipPackage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Model3D": {
       "get": {
         "tags": [
@@ -1232,13 +1498,26 @@
             "type": "integer",
             "format": "int32"
           },
+          "modelGenerationLimit": {
+            "type": "integer",
+            "format": "int32"
+          },
           "isDeleted": {
             "type": "boolean"
           },
-          "subscribers": {
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "userSubscriptions": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/User"
+              "$ref": "#/components/schemas/UserMembershipSubscription"
             },
             "nullable": true
           }
@@ -1248,6 +1527,7 @@
       "MembershipPackageRequest": {
         "required": [
           "durationDays",
+          "modelGenerationLimit",
           "packageName",
           "price"
         ],
@@ -1272,6 +1552,12 @@
           "durationDays": {
             "maximum": 3650,
             "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "modelGenerationLimit": {
+            "maximum": 2147483647,
+            "minimum": -1,
             "type": "integer",
             "format": "int32"
           }
@@ -1301,9 +1587,27 @@
             "type": "integer",
             "format": "int32"
           },
-          "subscriberCount": {
+          "modelGenerationLimit": {
             "type": "integer",
             "format": "int32"
+          },
+          "modelGenerationLimitDisplay": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "activeSubscriberCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1332,6 +1636,13 @@
           "durationDays": {
             "maximum": 3650,
             "minimum": 1,
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "modelGenerationLimit": {
+            "maximum": 2147483647,
+            "minimum": -1,
             "type": "integer",
             "format": "int32",
             "nullable": true
@@ -1460,6 +1771,21 @@
         },
         "additionalProperties": false
       },
+      "PurchaseMembershipRequest": {
+        "required": [
+          "packageId"
+        ],
+        "type": "object",
+        "properties": {
+          "packageId": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "RegisterRequest": {
         "required": [
           "email",
@@ -1502,6 +1828,15 @@
         },
         "additionalProperties": false
       },
+      "SubscriptionStatus": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "User": {
         "type": "object",
         "properties": {
@@ -1527,6 +1862,15 @@
           "isDeleted": {
             "type": "boolean"
           },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "models": {
             "type": "array",
             "items": {
@@ -1541,11 +1885,51 @@
             },
             "nullable": true
           },
-          "subscribedPackages": {
+          "membershipSubscriptions": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/MembershipPackage"
+              "$ref": "#/components/schemas/UserMembershipSubscription"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserGenerationStatsResponse": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasActiveSubscription": {
+            "type": "boolean"
+          },
+          "activeSubscription": {
+            "$ref": "#/components/schemas/UserMembershipSubscriptionResponse"
+          },
+          "canGenerate": {
+            "type": "boolean"
+          },
+          "remainingGenerations": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "remainingGenerationsDisplay": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "totalGenerationsUsed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -1569,6 +1953,137 @@
           "role": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserMembershipSubscription": {
+        "type": "object",
+        "properties": {
+          "subscriptionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "packageId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "$ref": "#/components/schemas/SubscriptionStatus"
+          },
+          "remainingGenerations": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalGenerationsUsed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "package": {
+            "$ref": "#/components/schemas/MembershipPackage"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserMembershipSubscriptionResponse": {
+        "type": "object",
+        "properties": {
+          "subscriptionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "packageId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "packageName": {
+            "type": "string",
+            "nullable": true
+          },
+          "packageDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "packagePrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "packageDurationDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "isExpired": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "daysRemaining": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "remainingGenerations": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "remainingGenerationsDisplay": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "totalGenerationsUsed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

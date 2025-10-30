@@ -13,6 +13,10 @@ namespace MyApp.Business.DTOs.response
         public string? Description { get; set; }
         public decimal Price { get; set; }
         public int DurationDays { get; set; }
-        public int SubscriberCount { get; set; } // Số lượng người đang đăng ký gói này
+        public int ModelGenerationLimit { get; set; } // -1 = unlimited
+        public string ModelGenerationLimitDisplay => ModelGenerationLimit == -1 ? "Unlimited" : ModelGenerationLimit.ToString();
+        public int ActiveSubscriberCount { get; set; } // Số lượng người đang active
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
     }
 }
