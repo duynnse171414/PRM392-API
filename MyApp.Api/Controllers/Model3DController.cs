@@ -104,7 +104,7 @@ namespace MyApp.API.Controllers
 
         // POST: api/model3d
         [HttpPost]
-        public async Task<ActionResult<Model3DResponse>> CreateModel([FromBody] Model3DRequest request)
+        public async Task<ActionResult<Model3DResponse>> CreateModel([FromBody] String base64Img)
         {
             if (!ModelState.IsValid)
             {
@@ -118,12 +118,14 @@ namespace MyApp.API.Controllers
                 return Unauthorized();
             }
 
-            request.UserId = int.Parse(userIdClaim);
+            int userId = int.Parse(userIdClaim);
 
             try
             {
-                var createdModel = await _model3DService.CreateAsync(request);
+                var createdModel = await _model3DService.CreateAsync(base64Img, userId);
                 return CreatedAtAction(nameof(GetModel), new { id = createdModel.ModelId }, createdModel);
+                //var glbBase64 = await _model3DService.CreateAsync(base64Img, userId);
+                //return Ok(new { glbBase64 });
             }
             catch (ArgumentException ex)
             {
@@ -132,79 +134,79 @@ namespace MyApp.API.Controllers
         }
 
         // PUT: api/model3d/{id}
-        [HttpPut("{id}")]
-        public async Task<ActionResult<Model3DResponse>> UpdateModel(int id, [FromBody] Model3DUpdateRequest request)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[HttpPut("{id}")]
+        //public async Task<ActionResult<Model3DResponse>> UpdateModel(int id, [FromBody] Model3DUpdateRequest request)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            // Kiểm tra model có tồn tại
-            var existingModel = await _model3DService.GetByIdAsync(id);
-            if (existingModel == null)
-            {
-                return NotFound(new { message = "Model not found" });
-            }
+        //    // Kiểm tra model có tồn tại
+        //    var existingModel = await _model3DService.GetByIdAsync(id);
+        //    if (existingModel == null)
+        //    {
+        //        return NotFound(new { message = "Model not found" });
+        //    }
 
-            // Kiểm tra quyền: chỉ update được model của chính mình hoặc là Admin
-            var currentUserIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            var currentUserRole = User.FindFirst(ClaimTypes.Role)?.Value;
+        //    // Kiểm tra quyền: chỉ update được model của chính mình hoặc là Admin
+        //    var currentUserIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        //    var currentUserRole = User.FindFirst(ClaimTypes.Role)?.Value;
 
-            if (currentUserIdClaim == null)
-            {
-                return Unauthorized();
-            }
+        //    if (currentUserIdClaim == null)
+        //    {
+        //        return Unauthorized();
+        //    }
 
-            var currentUserId = int.Parse(currentUserIdClaim);
-            if (existingModel.UserId != currentUserId && currentUserRole != "Admin")
-            {
-                return Forbid();
-            }
+        //    var currentUserId = int.Parse(currentUserIdClaim);
+        //    if (existingModel.UserId != currentUserId && currentUserRole != "Admin")
+        //    {
+        //        return Forbid();
+        //    }
 
-            try
-            {
-                var updatedModel = await _model3DService.UpdateAsync(id, request);
-                return Ok(updatedModel);
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-        }
+        //    try
+        //    {
+        //        var updatedModel = await _model3DService.UpdateAsync(id, request);
+        //        return Ok(updatedModel);
+        //    }
+        //    catch (ArgumentException ex)
+        //    {
+        //        return BadRequest(new { message = ex.Message });
+        //    }
+        //}
 
         // DELETE: api/model3d/{id}
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteModel(int id)
-        {
-            var model = await _model3DService.GetByIdAsync(id);
-            if (model == null)
-            {
-                return NotFound(new { message = "Model not found" });
-            }
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteModel(int id)
+        //{
+        //    var model = await _model3DService.GetByIdAsync(id);
+        //    if (model == null)
+        //    {
+        //        return NotFound(new { message = "Model not found" });
+        //    }
 
-            // Kiểm tra quyền: chỉ xóa được model của chính mình hoặc là Admin
-            var currentUserIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            var currentUserRole = User.FindFirst(ClaimTypes.Role)?.Value;
+        //    // Kiểm tra quyền: chỉ xóa được model của chính mình hoặc là Admin
+        //    var currentUserIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        //    var currentUserRole = User.FindFirst(ClaimTypes.Role)?.Value;
 
-            if (currentUserIdClaim == null)
-            {
-                return Unauthorized();
-            }
+        //    if (currentUserIdClaim == null)
+        //    {
+        //        return Unauthorized();
+        //    }
 
-            var currentUserId = int.Parse(currentUserIdClaim);
-            if (model.UserId != currentUserId && currentUserRole != "Admin")
-            {
-                return Forbid();
-            }
+        //    var currentUserId = int.Parse(currentUserIdClaim);
+        //    if (model.UserId != currentUserId && currentUserRole != "Admin")
+        //    {
+        //        return Forbid();
+        //    }
 
-            var result = await _model3DService.DeleteAsync(id);
-            if (!result)
-            {
-                return NotFound();
-            }
+        //    var result = await _model3DService.DeleteAsync(id);
+        //    if (!result)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return NoContent();
-        }
+        //    return NoContent();
+        //}
     }
 }

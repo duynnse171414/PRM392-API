@@ -390,8 +390,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "MyApp.Business.DTOs.request.Model3DRequest",
+        "Name": "base64Img",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -432,53 +432,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "MyApp.API.Controllers.Model3DController",
-    "Method": "UpdateModel",
-    "RelativePath": "api/Model3D/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "MyApp.Business.DTOs.request.Model3DUpdateRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "MyApp.Business.DTOs.response.Model3DResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "MyApp.API.Controllers.Model3DController",
-    "Method": "DeleteModel",
-    "RelativePath": "api/Model3D/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "MyApp.API.Controllers.Model3DController",

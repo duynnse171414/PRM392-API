@@ -66,31 +66,31 @@ namespace MyApp.Business.Services
             return models.Select(m => MapToResponse(m));
         }
 
-        public async Task<Model3DResponse> CreateAsync(Model3DRequest request)
+        public async Task<Model3DResponse> CreateAsync(String base64Img, int userId)
         {
             // 1️⃣ Validate input
-            if (string.IsNullOrWhiteSpace(request.Image))
+            if (string.IsNullOrWhiteSpace(base64Img))
                 throw new ArgumentException("Image is required");
 
-            if (request.UserId <= 0)
+            if (userId <= 0)
                 throw new ArgumentException("UserId is required and must be greater than 0");
 
-            var userExists = await _context.Users.AnyAsync(u => u.UserId == request.UserId);
+            var userExists = await _context.Users.AnyAsync(u => u.UserId == userId);
             if (!userExists)
-                throw new ArgumentException($"User with ID {request.UserId} does not exist");
+                throw new ArgumentException($"User with ID {userId} does not exist");
 
             // 2️⃣ Gửi ảnh base64 sang AI model để tạo file 3D
-            var glbBase64 = await UploadToAIModel(request.Image);
+            var glbBase64 = await UploadToAIModel(base64Img);
 
             // 3️⃣ Lưu file glb tạm và upload lên Backblaze
-            var fileUrl = await SaveAndUploadGlbToBackblaze(glbBase64, request.UserId);
+            var fileUrl = await SaveAndUploadGlbToBackblaze(glbBase64, userId);
 
             // 4️⃣ Lưu vào DB
             var entity = new Model3D
             {
                 FilePath = fileUrl,
-                Status = "Pending",
-                UserId = request.UserId,
+                Status = "Successfully",
+                UserId = userId,
                 CreationDate = GetVietnamTime(),
                 IsDeleted = false
             };

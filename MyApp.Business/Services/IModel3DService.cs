@@ -15,7 +15,7 @@ namespace MyApp.Business.Services
         Task<IEnumerable<Model3DResponse>> GetAllAsync();
         Task<Model3DResponse?> GetByIdAsync(int id);
         Task<IEnumerable<Model3DResponse>> GetByUserIdAsync(int userId);
-        Task<Model3DResponse> CreateAsync(Model3DRequest request);
+        Task<Model3DResponse> CreateAsync(String base64, int userId);
         Task<Model3DResponse> UpdateAsync(int id, Model3DUpdateRequest request);
         Task<bool> DeleteAsync(int id);
        

@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\model3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|d:\\dihoc\\prm392-api\\myapp.business\\services\\backblazestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\backblazestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\controllers\\model3dcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\model3dcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|d:\\dihoc\\prm392-api\\myapp.business\\services\\imodel3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|solutionrelative:myapp.business\\services\\imodel3dservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53AF7D66-301C-4F1B-ACFF-E02629EBA496}|MyApp.Business\\MyApp.Business.csproj|d:\\dihoc\\prm392-api\\myapp.business\\dtos\\request\\model3drequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|solutionrelative:myapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3733544D-3BF5-423F-9D30-288370A81098}|MyApp.Api\\MyApp.Api.csproj|d:\\dihoc\\prm392-api\\myapp.api\\myapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -41,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,14 +94,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BackblazeStorageService.cs",
-              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\BackblazeStorageService.cs",
-              "RelativeDocumentMoniker": "MyApp.Business\\Services\\BackblazeStorageService.cs",
-              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\BackblazeStorageService.cs",
-              "RelativeToolTip": "MyApp.Business\\Services\\BackblazeStorageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
+              "Title": "Model3DController.cs",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Controllers\\Model3DController.cs",
+              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\Model3DController.cs",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Controllers\\Model3DController.cs",
+              "RelativeToolTip": "MyApp.Api\\Controllers\\Model3DController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwGoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:55:28.325Z",
+              "WhenOpened": "2025-10-29T14:45:46.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IModel3DService.cs",
+              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\IModel3DService.cs",
+              "RelativeDocumentMoniker": "MyApp.Business\\Services\\IModel3DService.cs",
+              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\IModel3DService.cs",
+              "RelativeToolTip": "MyApp.Business\\Services\\IModel3DService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T14:46:43.88Z",
               "EditorCaption": ""
             },
             {
@@ -112,14 +125,14 @@
               "RelativeDocumentMoniker": "MyApp.Business\\Services\\Model3DService.cs",
               "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\Services\\Model3DService.cs",
               "RelativeToolTip": "MyApp.Business\\Services\\Model3DService.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAwwMEAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGQAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T06:50:22.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Model3DRequest.cs",
               "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
               "RelativeDocumentMoniker": "MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
@@ -127,21 +140,7 @@
               "RelativeToolTip": "MyApp.Business\\DTOs\\request\\Model3DRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:50:10.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "MyApp.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "MyApp.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:46:10.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T06:50:10.904Z"
             },
             {
               "$type": "Document",
@@ -153,8 +152,7 @@
               "RelativeToolTip": "MyApp.Api\\MyApp.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-28T11:43:39.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T11:43:39.192Z"
             },
             {
               "$type": "Document",
@@ -167,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\Program.cs",
               "RelativeDocumentMoniker": "MyApp.Api\\Program.cs",
@@ -175,12 +173,11 @@
               "RelativeToolTip": "MyApp.Api\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:37:11.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T11:37:11.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\appsettings.json",
               "RelativeDocumentMoniker": "MyApp.Api\\appsettings.json",
@@ -188,8 +185,7 @@
               "RelativeToolTip": "MyApp.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T11:34:31.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T11:34:31.964Z"
             }
           ]
         }

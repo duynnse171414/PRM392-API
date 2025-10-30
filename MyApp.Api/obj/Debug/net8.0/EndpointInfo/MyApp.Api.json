@@ -686,17 +686,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Model3DRequest"
+                "type": "string"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Model3DRequest"
+                "type": "string"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Model3DRequest"
+                "type": "string"
               }
             }
           }
@@ -799,84 +799,6 @@
                 }
               }
             }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Model3D"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Model3DUpdateRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Model3DUpdateRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Model3DUpdateRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Model3DResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Model3DResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Model3DResponse"
-                }
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Model3D"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
           }
         }
       }
@@ -1388,26 +1310,6 @@
         },
         "additionalProperties": false
       },
-      "Model3DRequest": {
-        "required": [
-          "image",
-          "userId"
-        ],
-        "type": "object",
-        "properties": {
-          "image": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "userId": {
-            "maximum": 2147483647,
-            "minimum": 1,
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "Model3DResponse": {
         "type": "object",
         "properties": {
@@ -1438,24 +1340,6 @@
           "generationHistoryCount": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Model3DUpdateRequest": {
-        "type": "object",
-        "properties": {
-          "filePath": {
-            "maxLength": 500,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false
