@@ -104,7 +104,7 @@ namespace MyApp.API.Controllers
 
         // POST: api/model3d
         [HttpPost]
-        public async Task<ActionResult<Model3DResponse>> CreateModel([FromBody] String base64Img)
+        public async Task<ActionResult<Model3DResponse>> CreateModel([FromBody] Model3DRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -122,7 +122,7 @@ namespace MyApp.API.Controllers
 
             try
             {
-                var createdModel = await _model3DService.CreateAsync(base64Img, userId);
+                var createdModel = await _model3DService.CreateAsync(request.Image, userId);
                 return CreatedAtAction(nameof(GetModel), new { id = createdModel.ModelId }, createdModel);
                 //var glbBase64 = await _model3DService.CreateAsync(base64Img, userId);
                 //return Ok(new { glbBase64 });

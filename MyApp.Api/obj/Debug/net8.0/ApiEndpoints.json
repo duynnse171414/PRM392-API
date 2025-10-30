@@ -548,8 +548,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "base64Img",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "MyApp.Business.DTOs.request.Model3DRequest",
         "IsRequired": true
       }
     ],

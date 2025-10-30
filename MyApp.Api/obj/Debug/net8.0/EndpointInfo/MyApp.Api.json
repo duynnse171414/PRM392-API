@@ -952,17 +952,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Model3DRequest"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Model3DRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Model3DRequest"
               }
             }
           }
@@ -1617,6 +1617,19 @@
               "$ref": "#/components/schemas/GenerationHistory"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Model3DRequest": {
+        "required": [
+          "image"
+        ],
+        "type": "object",
+        "properties": {
+          "image": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
