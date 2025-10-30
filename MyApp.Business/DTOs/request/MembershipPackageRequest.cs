@@ -23,5 +23,9 @@ namespace MyApp.Business.DTOs.request
         [Required(ErrorMessage = "Duration days is required")]
         [Range(1, 3650, ErrorMessage = "Duration must be between 1 and 3650 days")]
         public int DurationDays { get; set; }
+
+        [Required(ErrorMessage = "Model generation limit is required")]
+        [Range(-1, int.MaxValue, ErrorMessage = "Model generation limit must be -1 (unlimited) or greater than 0")]
+        public int ModelGenerationLimit { get; set; } // -1 = unlimited, 0+ = số lượt cụ thể
     }
 }

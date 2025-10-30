@@ -3081,23 +3081,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KienHo\\.nuget\\packages\\": {},
+    "C:\\Users\\Dell\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\MyApp.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\MyApp.Api\\MyApp.Api.csproj",
       "projectName": "MyApp.Api",
-      "projectPath": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\MyApp.Api.csproj",
-      "packagesPath": "C:\\Users\\KienHo\\.nuget\\packages\\",
-      "outputPath": "D:\\DIHOC\\PRM392-API\\MyApp.Api\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\MyApp.Api\\MyApp.Api.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\MyApp.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\KienHo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3106,18 +3106,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DIHOC\\PRM392-API\\MyApp.Business\\MyApp.Business.csproj": {
-              "projectPath": "D:\\DIHOC\\PRM392-API\\MyApp.Business\\MyApp.Business.csproj"
+            "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\MyApp.Business\\MyApp.Business.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\MyApp.Business\\MyApp.Business.csproj"
             },
-            "D:\\DIHOC\\PRM392-API\\MyApp.Data\\MyApp.Data.csproj": {
-              "projectPath": "D:\\DIHOC\\PRM392-API\\MyApp.Data\\MyApp.Data.csproj"
+            "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\MyApp.Data\\MyApp.Data.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Documents\\PRM392\\PRM392-API\\MyApp.Data\\MyApp.Data.csproj"
             }
           }
         }
@@ -3132,7 +3131,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -3179,7 +3178,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

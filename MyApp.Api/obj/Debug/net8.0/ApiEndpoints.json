@@ -362,6 +362,164 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "CanGenerate",
+    "RelativePath": "api/MembershipPackage/can-generate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "GetMyGenerationStats",
+    "RelativePath": "api/MembershipPackage/generation-stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MyApp.Business.DTOs.response.UserGenerationStatsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "GetMyActiveSubscription",
+    "RelativePath": "api/MembershipPackage/my-subscription",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MyApp.Business.DTOs.response.UserMembershipSubscriptionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "GetMySubscriptionHistory",
+    "RelativePath": "api/MembershipPackage/my-subscription/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyApp.Business.DTOs.response.UserMembershipSubscriptionResponse, MyApp.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "PurchasePackage",
+    "RelativePath": "api/MembershipPackage/purchase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MyApp.Business.DTOs.request.PurchaseMembershipRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyApp.Business.DTOs.response.UserMembershipSubscriptionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "CancelSubscription",
+    "RelativePath": "api/MembershipPackage/subscription/{subscriptionId}/cancel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subscriptionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "GetAllSubscriptions",
+    "RelativePath": "api/MembershipPackage/subscriptions/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyApp.Business.DTOs.response.UserMembershipSubscriptionResponse, MyApp.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Api.Controllers.MembershipPackageController",
+    "Method": "GetUserSubscriptions",
+    "RelativePath": "api/MembershipPackage/subscriptions/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyApp.Business.DTOs.response.UserMembershipSubscriptionResponse, MyApp.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MyApp.API.Controllers.Model3DController",
     "Method": "GetMyModels",
     "RelativePath": "api/Model3D",
