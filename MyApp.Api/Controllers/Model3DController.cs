@@ -18,10 +18,14 @@ namespace MyApp.API.Controllers
     public class Model3DController : ControllerBase
     {
         private readonly IModel3DService _model3DService;
+        private readonly IMembershipPackageService _membershipPackageService; // ✅ Thêm service
 
-        public Model3DController(IModel3DService model3DService)
+        public Model3DController(
+            IModel3DService model3DService,
+            IMembershipPackageService membershipPackageService) // ✅ Inject service
         {
             _model3DService = model3DService;
+            _membershipPackageService = membershipPackageService;
         }
 
         // GET: api/model3d
@@ -102,6 +106,28 @@ namespace MyApp.API.Controllers
             return Ok(models);
         }
 
+        // ✅ GET: api/model3d/generation-stats
+        // Xem thống kê số lượt gen còn lại
+        [HttpGet("generation-stats")]
+        public async Task<ActionResult<UserGenerationStatsResponse>> GetGenerationStats()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
+            {
+                return Unauthorized(new { message = "Invalid user token" });
+            }
+
+            try
+            {
+                var stats = await _membershipPackageService.GetUserGenerationStatsAsync(userId);
+                return Ok(stats);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
         // POST: api/model3d
         [HttpPost]
         public async Task<ActionResult<Model3DResponse>> CreateModel([FromBody] Model3DRequest request)
@@ -120,18 +146,71 @@ namespace MyApp.API.Controllers
 
             int userId = int.Parse(userIdClaim);
 
+            // ✅ BƯỚC 1: CHECK membership - User có thể gen không?
+            try
+            {
+                var canGenerate = await _membershipPackageService.CanUserGenerateAsync(userId);
+
+                if (!canGenerate)
+                {
+                    var stats = await _membershipPackageService.GetUserGenerationStatsAsync(userId);
+
+                    return BadRequest(new
+                    {
+                        success = false,
+                        message = stats.Message ?? "You have no remaining generations. Please purchase or upgrade your membership package.",
+                        remainingGenerations = stats.RemainingGenerations,
+                        hasActiveSubscription = stats.HasActiveSubscription,
+                        canGenerate = false
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { success = false, message = $"Error checking membership: {ex.Message}" });
+            }
+
+            // ✅ BƯỚC 2: Generate model
             try
             {
                 var createdModel = await _model3DService.CreateAsync(request.Image, userId);
-                return CreatedAtAction(nameof(GetModel), new { id = createdModel.ModelId }, createdModel);
-                //var glbBase64 = await _model3DService.CreateAsync(base64Img, userId);
-                //return Ok(new { glbBase64 });
+
+                // ✅ BƯỚC 3: SAU KHI GEN THÀNH CÔNG - TRỪ 1 LƯỢT
+                var consumed = await _membershipPackageService.ConsumeGenerationAsync(userId);
+
+                if (!consumed)
+                {
+                    // Trường hợp này không nên xảy ra vì đã check ở bước 1
+                    // Nhưng để an toàn, log lại
+                    Console.WriteLine($"[WARNING] User {userId} generated model but couldn't consume generation");
+                }
+
+                // Lấy thông tin mới sau khi trừ lượt
+                var updatedStats = await _membershipPackageService.GetUserGenerationStatsAsync(userId);
+
+                return CreatedAtAction(
+                    nameof(GetModel),
+                    new { id = createdModel.ModelId },
+                    new
+                    {
+                        success = true,
+                        message = "Model generated successfully",
+                        model = createdModel,
+                        remainingGenerations = updatedStats.RemainingGenerations,
+                        totalGenerationsUsed = updatedStats.TotalGenerationsUsed
+                    });
             }
             catch (ArgumentException ex)
             {
-                return BadRequest(new { message = ex.Message });
+                return BadRequest(new { success = false, message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = $"Error generating model: {ex.Message}" });
             }
         }
+    
+
 
         // PUT: api/model3d/{id}
         //[HttpPut("{id}")]

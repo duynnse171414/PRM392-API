@@ -12,10 +12,11 @@ namespace MyApp.Api.Controllers
     public class MembershipPackageController : ControllerBase
     {
         private readonly IMembershipPackageService _membershipPackageService;
-
-        public MembershipPackageController(IMembershipPackageService membershipPackageService)
+        private readonly IVnPayService _vnPayService; 
+        public MembershipPackageController(IMembershipPackageService membershipPackageService, IVnPayService vnPayService)
         {
             _membershipPackageService = membershipPackageService;
+            _vnPayService = vnPayService;
         }
 
         #region Package Management (CRUD)
@@ -117,32 +118,64 @@ namespace MyApp.Api.Controllers
         // Customer mua gói membership
         [HttpPost("purchase")]
         [Authorize(Roles = "Customer,Admin")]
-        public async Task<ActionResult<UserMembershipSubscriptionResponse>> PurchasePackage([FromBody] PurchaseMembershipRequest request)
+        public async Task<ActionResult<object>> PurchasePackage([FromBody] PurchaseMembershipRequest request)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             try
             {
-                // Lấy userId từ token
                 var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
                 {
                     return Unauthorized(new { message = "Invalid user token" });
                 }
 
-                var subscription = await _membershipPackageService.PurchasePackageAsync(userId, request.PackageId);
+                // Kiểm tra package
+                var package = await _membershipPackageService.GetByIdAsync(request.PackageId);
+                if (package == null)
+                {
+                    return NotFound(new { message = "Package not found" });
+                }
+
+                // ✅ NẾU LÀ GÓI FREE → Kích hoạt luôn
+                if (package.Price == 0)
+                {
+                    var subscription = await _membershipPackageService.PurchasePackageAsync(userId, request.PackageId);
+
+                    return Ok(new
+                    {
+                        success = true,
+                        message = "Free package activated successfully",
+                        packageType = "free",
+                        subscription
+                    });
+                }
+
+                // === PAID: tạo URL thanh toán VNPay ===
+                // Lấy IP client để truyền cho service (đúng chữ ký interface)
+                var ipAddress = HttpContext.Connection.RemoteIpAddress?
+                                    .MapToIPv4().ToString() ?? "127.0.0.1";
+
+                // Map request sang DTO mà IVnPayService đang dùng
+                var payReq = new VnPayPaymentRequest
+                {
+                    PackageId = request.PackageId, // lấy từ request hiện có
+                    BankCode = "VNBANK",          // mặc định: VNPay ATM nội địa; đổi nếu cần
+                    Locale = "vn"               // mặc định: tiếng Việt
+                };
+
+                // GỌI ĐÚNG CHỮ KÝ (3 tham số)
+                var paymentUrl = _vnPayService.CreatePaymentUrl(userId, payReq, ipAddress);
+
                 return Ok(new
                 {
-                    message = "Package purchased successfully",
-                    subscription
+                    success = true,
+                    message = "Please complete payment via VNPAY",
+                    packageType = "paid",
+                    paymentUrl
                 });
             }
-            catch (ArgumentException ex)
+            catch (Exception ex)
             {
-                return BadRequest(new { message = ex.Message });
+                return BadRequest(new { success = false, message = ex.Message });
             }
         }
 
