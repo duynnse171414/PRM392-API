@@ -19,6 +19,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// ✅✅✅ THÊM CORS - Cho phép truy cập từ mọi nguồn
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()      // Cho phép mọi domain
+              .AllowAnyMethod()      // Cho phép mọi HTTP method (GET, POST, PUT, DELETE...)
+              .AllowAnyHeader();     // Cho phép mọi header
+    });
+});
+
 // ✅ Đăng ký DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
@@ -141,6 +152,7 @@ if (Environment.GetEnvironmentVariable("ENABLE_SWAGGER") == "true")
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAll");
 
 // ✅ QUAN TRỌNG: Thứ tự phải đúng
 app.UseAuthentication();
