@@ -13,6 +13,7 @@ namespace MyApp.Data
         public DbSet<MembershipPackage> MembershipPackages { get; set; } = null!;
         public DbSet<GenerationHistory> GenerationHistories { get; set; } = null!;
         public DbSet<UserMembershipSubscription> UserMembershipSubscriptions { get; set; } = null!;
+        public DbSet<PaymentTransaction> PaymentTransactions { get; set; } = null!;
 
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
         {
@@ -34,6 +35,7 @@ namespace MyApp.Data
             modelBuilder.Entity<MembershipPackage>().HasKey(p => p.PackageId);
             modelBuilder.Entity<GenerationHistory>().HasKey(h => h.HistoryId);
             modelBuilder.Entity<UserMembershipSubscription>().HasKey(s => s.SubscriptionId);
+            modelBuilder.Entity<PaymentTransaction>().HasKey(pt => pt.TransactionId);
 
             // ============ Cấu hình Auto Increment cho Primary Keys ============
             modelBuilder.Entity<User>()
@@ -54,6 +56,10 @@ namespace MyApp.Data
 
             modelBuilder.Entity<UserMembershipSubscription>()
                 .Property(s => s.SubscriptionId)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<PaymentTransaction>()
+                .Property(pt => pt.TransactionId)
                 .ValueGeneratedOnAdd();
 
             // ============ Cấu hình User Entity ============
@@ -154,6 +160,47 @@ namespace MyApp.Data
                 .HasMany(p => p.UserSubscriptions)
                 .WithOne(s => s.Package)
                 .HasForeignKey(s => s.PackageId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // ============ Cấu hình PaymentTransaction Entity ============
+            modelBuilder.Entity<PaymentTransaction>(entity =>
+            {
+                entity.Property(pt => pt.OrderId)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(pt => pt.Status)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .HasDefaultValue("Pending");
+
+                entity.Property(pt => pt.Amount)
+                    .HasPrecision(18, 2);
+
+                entity.Property(pt => pt.CreatedAt)
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP(6)");
+
+                entity.Property(pt => pt.IsDeleted)
+                    .HasDefaultValue(false);
+
+                // Unique index on OrderId for idempotency
+                entity.HasIndex(pt => pt.OrderId).IsUnique();
+                entity.HasIndex(pt => new { pt.UserId, pt.Status });
+                entity.HasIndex(pt => pt.CreatedAt);
+            });
+
+            // ============ Quan hệ: PaymentTransaction -> User ============
+            modelBuilder.Entity<User>()
+                .HasMany<PaymentTransaction>()
+                .WithOne(pt => pt.User)
+                .HasForeignKey(pt => pt.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // ============ Quan hệ: PaymentTransaction -> MembershipPackage ============
+            modelBuilder.Entity<MembershipPackage>()
+                .HasMany<PaymentTransaction>()
+                .WithOne(pt => pt.Package)
+                .HasForeignKey(pt => pt.PackageId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             // ============ Seed Data - Sample Packages ============

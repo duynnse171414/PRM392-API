@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyApp.Data;
 
@@ -10,9 +11,11 @@ using MyApp.Data;
 namespace MyApp.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251031014231_AddPaymentTransactionTable")]
+    partial class AddPaymentTransactionTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -97,7 +100,7 @@ namespace MyApp.Data.Migrations
                         new
                         {
                             PackageId = 1,
-                            CreatedAt = new DateTime(2025, 10, 31, 1, 49, 7, 612, DateTimeKind.Utc).AddTicks(8315),
+                            CreatedAt = new DateTime(2025, 10, 31, 1, 42, 31, 338, DateTimeKind.Utc).AddTicks(3071),
                             Description = "Gói dùng thử miễn phí với 5 lượt gen model 3D",
                             DurationDays = 7,
                             IsDeleted = false,
@@ -108,7 +111,7 @@ namespace MyApp.Data.Migrations
                         new
                         {
                             PackageId = 2,
-                            CreatedAt = new DateTime(2025, 10, 31, 1, 49, 7, 612, DateTimeKind.Utc).AddTicks(8320),
+                            CreatedAt = new DateTime(2025, 10, 31, 1, 42, 31, 338, DateTimeKind.Utc).AddTicks(3076),
                             Description = "Gói cơ bản cho người dùng thông thường với 50 lượt gen/tháng",
                             DurationDays = 30,
                             IsDeleted = false,
@@ -119,7 +122,7 @@ namespace MyApp.Data.Migrations
                         new
                         {
                             PackageId = 3,
-                            CreatedAt = new DateTime(2025, 10, 31, 1, 49, 7, 612, DateTimeKind.Utc).AddTicks(8321),
+                            CreatedAt = new DateTime(2025, 10, 31, 1, 42, 31, 338, DateTimeKind.Utc).AddTicks(3078),
                             Description = "Gói cao cấp với 200 lượt gen/tháng và ưu tiên hỗ trợ",
                             DurationDays = 30,
                             IsDeleted = false,
@@ -130,7 +133,7 @@ namespace MyApp.Data.Migrations
                         new
                         {
                             PackageId = 4,
-                            CreatedAt = new DateTime(2025, 10, 31, 1, 49, 7, 612, DateTimeKind.Utc).AddTicks(8359),
+                            CreatedAt = new DateTime(2025, 10, 31, 1, 42, 31, 338, DateTimeKind.Utc).AddTicks(3079),
                             Description = "Gói chuyên nghiệp với số lượt gen không giới hạn",
                             DurationDays = 30,
                             IsDeleted = false,
@@ -179,29 +182,17 @@ namespace MyApp.Data.Migrations
                 {
                     b.Property<int>("TransactionId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("PrTxId");
 
                     b.Property<decimal>("Amount")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime?>("CompletedAt")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime(6)")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP(6)");
-
-                    b.Property<bool>("IsDeleted")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("tinyint(1)")
-                        .HasDefaultValue(false);
-
-                    b.Property<string>("OrderId")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
 
                     b.Property<int>("PackageId")
                         .HasColumnType("int");
@@ -213,14 +204,22 @@ namespace MyApp.Data.Migrations
                         .HasColumnType("varchar(20)")
                         .HasDefaultValue("Pending");
 
+                    b.Property<string>("TxnRef")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<string>("VnPayResponseCode")
+                    b.Property<string>("VnpayResponseCode")
                         .HasMaxLength(10)
                         .HasColumnType("varchar(10)");
 
-                    b.Property<string>("VnPayTransactionId")
+                    b.Property<string>("VnpayTransactionId")
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
@@ -228,10 +227,10 @@ namespace MyApp.Data.Migrations
 
                     b.HasIndex("CreatedAt");
 
-                    b.HasIndex("OrderId")
-                        .IsUnique();
-
                     b.HasIndex("PackageId");
+
+                    b.HasIndex("TxnRef")
+                        .IsUnique();
 
                     b.HasIndex("UserId", "Status");
 
